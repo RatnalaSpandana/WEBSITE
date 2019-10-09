@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<title>page title</title>
+<style>
+body
+{
+padding-top:30%;
+}
+input
+{
+display:block;
+position:realtive;
+background:none;
+border-bottom:1px solid #ddd;
+text-indent: 10px;
+z-index:1;
+}
+span
+{
+display:inline-block;
+position: relative;
+top: -22px;
+left: 10px;
+color:#555;
+}
+input:focus , input:valid {
+border-bottom: 1px solid dodgerblue;
+transition: .4s;
+}
+input:focus +span , input:valid + span{
+top: -45px;
+color: dodgerblue;
+transition: .4s linear;
+}
+</style>
+</head>
+<body>
+<form>
+<input type="text" required><span>user name</span>
+</form>
+</body>
+</html>
